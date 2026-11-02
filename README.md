@@ -28,15 +28,25 @@ README.md    This file
 
 ## Updating the content
 
+### With the built-in editor
+
+1. Open the site and click **Edit** in the footer.
+2. Enter the editor password.
+3. Make your changes. Every section, entry, link, figure and the portrait can be added, edited, reordered, hidden or deleted.
+4. Click **Download page**. Your browser saves an updated `index.html`.
+5. Upload that file to this repository, replacing the old `index.html`. The live site updates after GitHub Pages rebuilds.
+
+Edits stay in your browser until you download the page, so nothing changes for visitors until you upload the new file. When the page is opened as a Claude artifact instead, the same editor publishes changes directly.
+
+### By hand
+
 All content lives as JSON in a single block near the end of `index.html`:
 
 ```html
 <script type="application/json" id="portfolio-data"> … </script>
 ```
 
-Edit that JSON (profile, figures, links, and the `sections` list), save, and the page renders the new content on its next load. Each section has a `type` that sets its layout: `publications`, `projects`, `datasets`, `timeline`, `experience`, `skills`, `service`, `entries`, `text` or `contact`.
-
-> The built-in visual editor (the "Edit portfolio" button) only works when the page is opened as a Claude artifact. On GitHub Pages the site is read-only, so edit the JSON directly.
+Each section has a `type` that sets its layout: `publications`, `projects`, `datasets`, `timeline`, `experience`, `skills`, `service`, `entries`, `text` or `contact`.
 
 ## Deployment
 
