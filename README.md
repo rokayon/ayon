@@ -11,6 +11,7 @@ Academic portfolio of **Rokonozzaman Ayon**, an AI/ML researcher based in Dhaka,
 - **Light and dark themes:** follows the visitor's system setting, with a manual toggle.
 - **Motion:** subtle reveal and hover effects, all turned off when a visitor's device asks for reduced motion.
 - **Responsive:** works on desktop, tablet and phone.
+- **Scholar mascot:** a small character in the bottom-right corner greets visitors, points them to the research and contact sections, reacts to searches and copied emails, and tucks out of the way while they scroll. It can be turned off or reworded in the editor.
 
 ## Tech
 
@@ -18,12 +19,16 @@ Academic portfolio of **Rokonozzaman Ayon**, an AI/ML researcher based in Dhaka,
 - Plain HTML, CSS and JavaScript.
 - [three.js](https://threejs.org/) (r128, loaded from cdnjs) draws the animated network in the header.
 - Google Fonts: Cormorant Garamond, Lora and DM Sans.
+- [Bible Strong Avatar Lab](https://github.com/smontlouis/bible-strong-avatar-lab) (`@bible-strong/avatar-web` 0.1.0) renders the mascot. It is bundled into the page.
 
 ## Repository structure
 
 ```
-index.html   The complete site: styles, content data and scripts
-README.md    This file
+index.html               The complete site: styles, content data, mascot engine and scripts
+LICENSE                  GNU Affero General Public License v3.0 (applies to the code)
+THIRD_PARTY_NOTICES.md   Credits and licences for bundled and loaded third-party software
+licenses/                Licence texts for bundled third-party packages
+README.md                This file
 ```
 
 ## Updating the content
@@ -65,4 +70,11 @@ To preview locally, open `index.html` in any modern browser.
 - ORCID: [0009-0000-3602-0714](https://orcid.org/0009-0000-3602-0714)
 - LinkedIn: [rokonozzaman-ayon](https://www.linkedin.com/in/rokonozzaman-ayon/)
 
-© 2026 Rokonozzaman Ayon. All rights reserved.
+## Credits
+
+The mascot is rendered with [Bible Strong Avatar Lab](https://github.com/smontlouis/bible-strong-avatar-lab) by Stéphane Montlouis-Calixte, licensed under the GNU AGPL v3.0. Its character definition is adapted from that project's Strobi example. Full details and all other third-party licences are in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+
+## Licence
+
+- **Code:** the site's code includes AGPL-3.0 software, so the code in this repository is released under the [GNU Affero General Public License v3.0](./LICENSE). Its source is this repository, which the site's footer links to.
+- **Content:** the biography, publication and dataset records, project descriptions and portrait photograph are © 2026 Rokonozzaman Ayon and are not covered by the code licence. Please ask before reusing them.
