@@ -13,6 +13,13 @@ This site includes or loads the following third-party software. Each component k
 - Use here: the packages are bundled unmodified into the `<script id="avatar-engine">` block.
 - Changes made: the mascot definition in `<script id="mascot-def">` is adapted from the project's `strobi.avatar.json` example. The body was changed to a rounded cube with a graduation cap, the colours were changed, and the set of expressions and animations was reduced.
 
+### ThreeUI Community (adapted code)
+
+- Copyright (c) 2026 Meng To
+- Licence: MIT ([licenses/threeui-MIT.txt](./licenses/threeui-MIT.txt))
+- Source: https://github.com/MengTo/threeui
+- Use here: the project filmstrip's card pose maths is adapted from the "Character Carousel" filmstrip, and the engraved rosette seals are adapted from the "Engraved Certificate" component. Both were rewritten in plain JavaScript and restyled for this site.
+
 ### Ajv and its dependencies (bundled with the mascot engine)
 
 | Package | Version | Licence | Licence text |

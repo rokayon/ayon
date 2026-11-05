@@ -6,8 +6,9 @@ Academic portfolio of **Rokonozzaman Ayon**, an AI/ML researcher based in Dhaka,
 
 - **Publications:** filter by category (All, Journal, Conference, Preprint, Ongoing), search by title, venue or tag, and see each paper's status.
 - **Research datasets:** published Mendeley Data records with direct links, plus datasets in preparation.
-- **Projects:** research prototypes and production systems.
+- **Projects:** research prototypes and production systems in a 3D filmstrip with a details panel, filters and a list view.
 - **Academic service:** peer-review record by journal, linked to ORCID.
+- **Certificates:** a filterable gallery of conference, experience, training, contest and volunteering certificates with a full-size viewer.
 - **Light and dark themes:** follows the visitor's system setting, with a manual toggle.
 - **Motion:** subtle reveal and hover effects, all turned off when a visitor's device asks for reduced motion.
 - **Responsive:** works on desktop, tablet and phone.
@@ -72,7 +73,7 @@ To preview locally, open `index.html` in any modern browser.
 
 ## Credits
 
-The mascot is rendered with [Bible Strong Avatar Lab](https://github.com/smontlouis/bible-strong-avatar-lab) by Stéphane Montlouis-Calixte, licensed under the GNU AGPL v3.0. Its character definition is adapted from that project's Strobi example. Full details and all other third-party licences are in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+The mascot is rendered with [Bible Strong Avatar Lab](https://github.com/smontlouis/bible-strong-avatar-lab) by Stéphane Montlouis-Calixte, licensed under the GNU AGPL v3.0. Its character definition is adapted from that project's Strobi example. Parts of the project filmstrip and the engraved seals are adapted from [ThreeUI Community](https://github.com/MengTo/threeui) by Meng To (MIT). Full details and all other third-party licences are in [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
 
 ## Licence
 
