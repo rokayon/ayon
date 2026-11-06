@@ -564,7 +564,10 @@ button.citem { width: 100%; text-align: left; }
 .lock-wrap.show { pointer-events: auto; }
 .lock-scrim { position: absolute; inset: 0; background: var(--overlay); opacity: 0; transition: opacity var(--d-fast) var(--ease); }
 .lock-wrap.show .lock-scrim { opacity: 1; }
-.lock { position: relative; width: min(360px, 100%); padding: 26px 24px 20px; border-radius: 22px; font-family: var(--f-ui); text-align: center; display: grid; gap: 10px; background: var(--glass-card); }
+.lock { position: relative; width: min(360px, 100%); padding: 26px 24px 20px; border-radius: 22px; font-family: var(--f-ui); text-align: center; display: grid; gap: 10px; background: var(--bg-card); isolation: isolate; }
+/* Dialogs: solid panels (a blurred backdrop on a scaling panel renders unreliably on some GPUs); the blur sits on the scrim instead */
+.lock.glass, .lb-panel.glass { -webkit-backdrop-filter: none; backdrop-filter: none; }
+.lock-scrim, .lb-scrim { -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
 .t-modal { transform-origin: center; transform: scale(.96); opacity: 0; pointer-events: none; transition: transform 250ms var(--ease), opacity 250ms var(--ease); }
 .t-modal.is-open { transform: scale(1); opacity: 1; pointer-events: auto; }
 .t-modal.is-closing { transform: scale(.96); opacity: 0; transition: transform 150ms var(--ease), opacity 150ms var(--ease); }
@@ -649,7 +652,9 @@ button.citem { width: 100%; text-align: left; }
 .foot-credit { flex-basis: 100%; font-size: .68rem; color: var(--fg-3); }
 .foot-credit a { text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--rule-light); }
 .foot-credit a:hover { color: var(--fg); text-decoration-color: currentColor; }
-.has-mascot .foot { padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
+.has-mascot .foot { padding-bottom: calc(26px + env(safe-area-inset-bottom, 0px)); }
+/* where the footer runs under the floating buttons, keep its text clear of them */
+@media (max-width: 1279px) { .has-mascot .foot-inner { padding-right: 78px; } }
 @media (max-width: 560px) {
   .has-mascot .fab { bottom: calc(16px + env(safe-area-inset-bottom, 0px)); right: calc(16px + 8px + env(safe-area-inset-right, 0px)); }
 }
